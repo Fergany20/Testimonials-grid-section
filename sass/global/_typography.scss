@@ -1,0 +1,30 @@
+
+
+// --- Typography System using clamp() ---
+
+// (Hero Section Title)
+// الموبايل: 2.5rem (40px) | مرن: 5vw | الشاشة الكبيرة: 4.5rem (72px)
+$fs-hero:     clamp(2.5rem, 5vw + 1rem, 4.5rem);
+
+// (H2 - Section Headings)
+// الموبايل: 2rem (32px) | مرن: 4vw | الشاشة الكبيرة: 3rem (48px)
+$fs-section:  clamp(2rem, 4vw + 0.5rem, 3rem);
+
+// (H3 / Card Titles)
+// الموبايل: 1.25rem (20px) | مرن: 2.5vw | الشاشة الكبيرة: 1.75rem (28px)
+$fs-card:     clamp(1.25rem, 2.5vw + 0.25rem, 1.75rem);
+
+// (Body Paragraphs)
+// الموبايل: 1rem (16px) | مرن: يتجاوب طردياً بنسبة بسيطة | الشاشة الكبيرة: 1.125rem (18px)
+$fs-body:     clamp(1rem, 1vw + 0.75rem, 1.125rem);
+
+
+// Font Weights
+$fw-light:    300;
+$fw-regular:  400; // الوزن العادي للنصوص
+$fw-medium:   500; // للـ Buttons أو القوائم
+$fw-semibold: 600; // للعناوين الصغيرة
+$fw-bold:     700; // للعناوين الرئيسية الواضحة
+
+
+$ff: "Barlow Semi Condensed", sans-serif;

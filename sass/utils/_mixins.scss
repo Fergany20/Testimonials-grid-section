@@ -1,0 +1,19 @@
+@use "./functions" as *;
+
+$breakpoints-up: (
+        "sm": rem(576),
+        // (Small tablets / Large phones)
+        "md": rem(768),
+        // (Tablets)
+        "lg": rem(992),
+        // (Laptops / Desktops)
+        "xl": rem(1200),
+        //  (Large desktops)
+        "xxl": rem(1400) // (Ultra-wide screens)
+);
+
+@mixin breakpoints($size){
+    @media  (min-width: map.get($breakpoints-up, $size)){
+        @content;
+    }
+}

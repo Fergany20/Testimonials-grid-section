@@ -1,0 +1,16 @@
+@use 'sass:math';
+
+@function rem( $pixels){
+    @if math.is-unitless($pixels){
+        @return math.div($pixels , 16) * 1rem;
+    } @else {
+        @error "Please provide a number for the pixels.";
+    }
+}
+@function em( $pixels){
+    @if math.is-unitless($pixels){
+        @return math.div($pixels , 16) * 1em;
+    } @else {
+        @error "Please provide a number for the pixels.";
+    }
+}
