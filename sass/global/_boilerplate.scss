@@ -1,4 +1,5 @@
 @use "../utils/functions" as *;
+@use "./typography" as *;
 
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
@@ -20,6 +21,7 @@
 body {
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+  font-family: $ff;
 }
 
 /* 6. Improve media defaults */

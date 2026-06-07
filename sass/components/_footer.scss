@@ -2,3 +2,23 @@
 @use "../global/colors" as *;
 @use "../global/typography" as *;
 @use "../utils/mixins" as *;
+
+
+.CTA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $black;
+    word-spacing: 1.2px;
+    letter-spacing: 1.2px;
+    text-transform: capitalize;
+    font-size: $fs-body;
+
+    span {
+        background-image: linear-gradient(to bottom left, $dark-blue,$purple-500);
+        color: transparent;
+        background-clip: text;
+        font-weight: $fw-bold;
+    }
+    margin: rem(56) 0;
+}

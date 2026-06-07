@@ -11,3 +11,10 @@ $grey-400:   hsl(224, 10%, 45%);
 $grey-500:   hsl(217, 19%, 35%);
 $dark-blue:  hsl(219, 29%, 14%);
 $black:      hsl(0, 0%, 7%);
+
+
+// --- Gradients (For Background) ---
+// purple: (violet to moderate-purple) from top-right to bottom-left
+$grad-purple: linear-gradient(to bottom left, hsl(282, 70%, 70%), hsl(263, 55%, 52%));
+// blue: (moderate-blue to light-blue) from top-left to bottom-right
+$grad-blue:   linear-gradient(to bottom right, hsl(217, 24%, 66%), hsl(214, 17%, 92%));
