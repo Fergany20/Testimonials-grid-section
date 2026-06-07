@@ -49,4 +49,14 @@ h1, h2, h3, h4, h5, h6 {
 */
 #root, #__next {
   isolation: isolate;
+}
+
+/*
+  11. change design of all links
+*/
+a {
+  text-decoration: none;
+}
+a:visited, a:active, a:focus {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
